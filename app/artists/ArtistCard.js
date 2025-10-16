@@ -1,4 +1,4 @@
-"use client"; // ez kell a kliens oldali interaktivitáshoz
+"use client";
 import { useState } from "react";
 
 const backendUrl = 'http://localhost:3001';
@@ -31,9 +31,12 @@ export default function ArtistCard({ artist }) {
       />
       <div style={{ padding: '15px', textAlign: 'center' }}>
         <h3 style={{ color: '#ff69b4', margin: '10px 0 5px' }}>{artist.name}</h3>
-        <h4 style={{ color: '#ccc', margin: 0, fontWeight: "bold"}}>{artist.genre}</h4>
-        
-        <p style={{ color: '#df90f3ff', margin: 0, padding: 15 }}>{artist.info}</p>
+        <p style={{ color: '#ccc', margin: '5px 0' }}>{artist.genre}</p>
+        {artist.info && (
+          <p style={{ color: '#aaa', fontSize: '0.9rem', marginTop: '10px', textAlign: 'justify' }}>
+            {artist.info}
+          </p>
+        )}
       </div>
     </div>
   );
