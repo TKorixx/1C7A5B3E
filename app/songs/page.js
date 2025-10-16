@@ -1,4 +1,3 @@
-
 const backendUrl = 'http://localhost:3001';
 
 async function getSongs() {
@@ -12,7 +11,7 @@ export default async function SongPage() {
 
   return (
     <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-      <h2 style={{ textAlign: 'center', color: '#ff69b4', marginBottom: '30px' }}>🎶 Dalok</h2>
+      <h2 style={{ textAlign: 'center', color: '#ff69b4', marginBottom: '30px' }}>🎶 Leghallgatottabb számok nézettség alapján 🎶</h2>
       <ul style={{ listStyle: 'none', padding: 0 }}>
         {songs.map(s => (
           <li key={s.id} style={{
@@ -23,15 +22,10 @@ export default async function SongPage() {
             border: '1px solid #ff69b4',
             boxShadow: '0 2px 6px rgba(0,0,0,0.3)'
           }}>
-            <strong style={{ color: '#ff69b4' }}>{s.title}</strong> – {s.artist} ({s.year})
+            <strong style={{ color: '#ff69b4' }}>{s.title}</strong> – {s.artist} ({s.year}) - {s.nezettseg} megtekintés
           </li>
         ))}
       </ul>
     </div>
   );
 }
-      </ul>
-    </div>
-  );
-}
->>>>>>> bc408db (javitva next.js-re)

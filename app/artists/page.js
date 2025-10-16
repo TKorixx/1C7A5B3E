@@ -1,4 +1,3 @@
-
 import ArtistForm from './ArtistForm';
 import ArtistCard from './ArtistCard';
 

@@ -31,12 +31,10 @@ export default function ArtistCard({ artist }) {
       />
       <div style={{ padding: '15px', textAlign: 'center' }}>
         <h3 style={{ color: '#ff69b4', margin: '10px 0 5px' }}>{artist.name}</h3>
-        <p style={{ color: '#ccc', margin: 0 }}>{artist.genre}</p>
+        <h4 style={{ color: '#ccc', margin: 0, fontWeight: "bold"}}>{artist.genre}</h4>
+        
+        <p style={{ color: '#df90f3ff', margin: 0, padding: 15 }}>{artist.info}</p>
       </div>
     </div>
   );
 }
-    </div>
-  );
-}
->>>>>>> bc408db (javitva next.js-re)

@@ -1,4 +1,3 @@
-
 // frontend-nextjs/app/page.js
 export default function Home() {
   return (
@@ -20,3 +19,4 @@ export default function Home() {
     </div>
   );
 }
+

@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
           <nav style={{ marginTop: '10px' }}>
             <a href="/artists" style={{ color: '#fff', margin: '0 10px', textDecoration: 'none' }}>Előadók</a>
             <a href="/songs" style={{ color: '#fff', margin: '0 10px', textDecoration: 'none' }}>Dalok</a>
+            <a href="/toplist" style={{ color: '#fff', margin: '0 10px', textDecoration: 'none' }}>Toplista</a>
           </nav>
         </header>
         <main style={{ padding: '20px' }}>{children}</main>
